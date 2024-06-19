@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Ricardo Salazar</title>
+    <meta name= "autothor" content="Ricardo Salazar">
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals w1 Assignment">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <H1>WDD 131: Dynamic Web Findamentals - Ricardo Salazar</H1>
+        <nav class="navigation">
+        <a href="https://www.linkedin.com/in/ricardo-salazar-480801314/">LinkedIn</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/28?lang=eng&id=p30#p30">Scripture</a>
+        <a href="https://byui.instructure.com">I-Learn</a>
+        <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card-left">
+            <h2 class="card-left-title">About me</h2>
+            <p class="first-text">My name is Ricardo, I am from Lima, Peru but I am currently living in Torino, Italy.I have 3 children, all boys, they and my wife are the ones who motivate me to improve. In my free time I like to research everything related to technology, I inherited my passion for technology from my father since, like him, we always want to be up to date on this topic.</p>
+            <img class="image1" src="images/user_pic.jpg" alt="user_pic">
+            <p class="peru-title">Peru</p>
+            <img class="image2" src="images/peru_flag.png" alt="peru_flag">
+            <p class="second-text">Peru is a country in South America that's home to a section of Amazon rainforest and Machu Picchu, an ancient Incan city high in the Andes mountains. The region around Machu Picchu, including the Sacred Valley, Inca Trail and colonial city of Cusco, is rich in archaeological sites.</p>
+            <p id="year"></p>
+        </section>
+
+        <section class="card-right">
+        <h2>Web Dev Resources</h2>
+        <p id="currentyear"></p>
+        <nav class="resources">
+            <li><a href="https://dev.to/">Dev. to Community</a></li>
+            <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+            <li><a href="https://css-tricks.com/">CSS tricks</a></li>
+            <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+            <li><a href="https://www.udemy.com/">Udemy</a></li>
+            <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+        </nav>
+        </section>
+    </main>
+
+    <footer>
+    <p>© <span class="currentyear"></span> Ricardo Salazar Peru</p>
+        <p class="lastModified"></p>
+    </footer>
 </body>
 </html>
