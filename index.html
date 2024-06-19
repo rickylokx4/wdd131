@@ -7,14 +7,14 @@
     <meta name= "autothor" content="Ricardo Salazar">
     <meta name="description" content="WDD 131 Dynamic Web Fundamentals w1 Assignment">
     <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
-        <H1>WDD 131: Dynamic Web Findamentals - Ricardo Salazar</H1>
+        <H1>WDD 131: Dynamic Web Findamentals - <span style="color: yellow;">Ricardo Salazar</span></H1>
         <nav class="navigation">
         <a href="https://www.linkedin.com/in/ricardo-salazar-480801314/">LinkedIn</a>
         <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/28?lang=eng&id=p30#p30">Scripture</a>
@@ -31,12 +31,10 @@
             <p class="peru-title">Peru</p>
             <img class="image2" src="images/peru_flag.png" alt="peru_flag">
             <p class="second-text">Peru is a country in South America that's home to a section of Amazon rainforest and Machu Picchu, an ancient Incan city high in the Andes mountains. The region around Machu Picchu, including the Sacred Valley, Inca Trail and colonial city of Cusco, is rich in archaeological sites.</p>
-            <p id="year"></p>
         </section>
 
         <section class="card-right">
         <h2>Web Dev Resources</h2>
-        <p id="currentyear"></p>
         <nav class="resources">
             <li><a href="https://dev.to/">Dev. to Community</a></li>
             <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
@@ -49,8 +47,10 @@
     </main>
 
     <footer>
-    <p>© <span class="currentyear"></span> Ricardo Salazar Peru</p>
-        <p class="lastModified"></p>
+    <p>&copy <span id="currentyear"></span> Ricardo Salazar-Peru</p>
+    <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
+
 </html>
