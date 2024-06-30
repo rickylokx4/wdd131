@@ -98,8 +98,10 @@ footer{
     }
     .navigation {
         margin-right: 0;
-		display: flex; 
 	}
+    .nav-list{
+        display: flex;
+    }
     .navigation li {
 		display: block; /* change state in small view */
 

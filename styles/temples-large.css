@@ -3,14 +3,16 @@
         height: 3.2rem;
         display: flex;
     }
-    .navigation {
+    .navigation
+    {
         margin-right: 0;
-		display: flex; 
-	}
+    }
+    .nav-list{
+        display: flex;
+    }
     .navigation li {
 		display: block; /* change state in small view */
 
-		
 	}
     .navigation a {
 		text-align: right;
