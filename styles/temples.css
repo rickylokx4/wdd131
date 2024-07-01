@@ -90,6 +90,11 @@ footer{
 #color-yellow{
     color: rgb(207, 207, 128);
 }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 @media only screen and (min-width: 570px) {
 	header{
@@ -116,10 +121,7 @@ footer{
     #menu {
 		display: none;
 	}
-    .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+    
     
 
 }
