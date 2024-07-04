@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machupicchu-Peru</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-medium-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Peru</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)" >
+                <img src="images/hero-large.webp" alt="Templo Arequipa-Peru" width="500px" height="250px">
+            </picture>
+        </div>
+        <div class="data-box">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Area: </th>
+                    <td>1.285 million km²</td>
+                </tr>
+                <tr>
+                    <th>Population:  </th>
+                    <td>34.05 million</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>Lima</td>
+                </tr>
+                <tr>
+                    <th>Lenguages: </th>
+                    <td>Spanish, Quechua</td>
+                </tr>
+                <tr>
+                    <th>Curency: </th>
+                    <td>Nuevo Sol</td>
+                </tr>
+                <tr>
+                    <th>Time Zone: </th>
+                    <td>GMT-5</td>
+                </tr>
+                <tr>
+                    <th>Calling Code: </th>
+                    <td>+51</td>
+                </tr>
+                <tr>
+                    <th>Internet TLD: </th>
+                    <td>.pe</td>
+                </tr>
+            </table>
+        </div>
+        <div class="weather-box">
+            <h2 class="weather-title">Weather</h2>
+            <img class="icon" src="images/sunny_icon.svg" alt="Sunny Icon" width="100" height="100">
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td>24 °C</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th>
+                    <td>Partly Cloudy</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td>6 Km/h</td>
+                </tr>
+                <tr>
+                    <th>Wind Chill: </th>
+                    <td id="windchill">-----</td>
+                </tr>
+                
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy <span id="currentyear"></span> Ricardo Salazar-Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

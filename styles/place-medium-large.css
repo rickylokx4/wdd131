@@ -1,0 +1,45 @@
+@media only screen and (min-width: 501px) {
+    body{
+    margin: auto;
+    min-width: 1000px;
+    max-width: 1001px;       
+    }
+    main{
+        width: auto;
+        height: auto;
+    }
+    h2{
+        background-color: var(--second-color);
+        padding: 0.6rem;
+        margin-left: -1.5rem;
+    }
+.data-box{
+    width: 15rem;
+    margin-top: -48%;
+    margin-left: 1.2rem;
+    background-color: white;
+    opacity: 0.7;
+    padding: 0.5rem;
+}
+.weather-box{
+    width: 15rem;
+    margin-top: -7%;
+    margin-left: 46rem;
+    background-color: white;
+    opacity: 0.7;
+    padding: 0.5rem;
+}
+.weather-box h2::after{
+    content: " ⛅";
+}
+th{
+    height:1.5rem;
+}
+.icon{
+    display: none;
+}
+footer{
+    margin-top: 6.5rem;
+}
+
+}
