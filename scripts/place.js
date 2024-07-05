@@ -19,4 +19,4 @@ CalculateWindChill = (temperature, wind) =>{
 }
 
 const windChill = document.getElementById('windchill');
-windChill.innerHTML=CalculateWindChill(5,6);
+windChill.innerHTML=CalculateWindChill(24,6);
