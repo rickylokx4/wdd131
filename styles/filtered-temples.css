@@ -1,3 +1,8 @@
+:root{
+    --background-color:#143b6f;
+    --secundary-font-color:#f5f56b;
+    --third-font-color: #ffff;
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +16,7 @@ body{
     min-width: 500px;
     max-width: 1300px;
     border: solid;
-    border-color: #2D5A95;
+    border-color: var(--background-color);
 }
 main{
     text-align: center;
@@ -20,7 +25,7 @@ main{
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: white;
+	color: var(--third-font-color);
     position: absolute;
 	top: 8px;
 	right: 20px;
@@ -33,14 +38,14 @@ main{
 }
 
 header{
-    background-color: #2D5A95;
+    background-color: var(--background-color);
     height: auto;
-    color: white;
+    color: var(--third-font-color);
     padding-left: 0.1rem;
     padding-right: 0.1rem;
 }
 nav{
-    background-color: #2D5A95;
+    background-color: var(--background-color);
 }
 .navigation{
     list-style: none;
@@ -86,13 +91,13 @@ img{
 }
 footer{
     font-size: 20px;
-    background-color: #2D5A95;
-    color: white;
+    background-color: var(--background-color);;
+    color: rgb(255, 255, 255);
     grid-column: 1/4;
     text-align: center;
 }
 #lastModified{
-    color:rgb(207, 207, 128);
+    color:var(--secundary-font-color);
 
 }
 #color-yellow{
