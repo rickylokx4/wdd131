@@ -125,7 +125,7 @@ footer{
         display: flex;
     }
     .navigation li {
-		display: block; /* change state in small view */
+		display: block;
 
 		
 	}

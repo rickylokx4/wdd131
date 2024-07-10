@@ -115,22 +115,23 @@ const temples = [
 	},
 ];
 
-function createMainContent(container){
+function createMainContent(container) {
 	container.forEach(element => {
 		let card = document.createElement("div");
 		let name = document.createElement("h3");
-		let location = document.createElement("p");	
+		let location = document.createElement("p");
 		let dedicated = document.createElement("p");
 		let area = document.createElement("p");
 		let image = document.createElement("img");
+
 		name.textContent = element.templeName
 		location.innerHTML = `<p class="info">Location:</p> ${element.location}`;
 		dedicated.innerHTML = `<p class="info">Dedicated:</p> ${element.dedicated}`;
 		area.innerHTML = `<p class="info">Area:</p> ${element.area} sq. ft.`;
 
 		card.setAttribute("class", "card");
-		image.setAttribute("src" ,element.imageUrl);
-		image.setAttribute("alt" ,`${element.templeName} temple`);
+		image.setAttribute("src", element.imageUrl);
+		image.setAttribute("alt", `${element.templeName} temple`);
 		image.setAttribute("loading", "lazy");
 
 		card.appendChild(name);
@@ -141,7 +142,7 @@ function createMainContent(container){
 		document.querySelector(".container").appendChild(card);
 	});
 
-	
+
 }
 createMainContent(temples);
 
@@ -153,40 +154,40 @@ const smallLink = document.getElementById("smallLink");
 const heading = document.querySelector("mainTitle");
 
 homeLink.addEventListener("click", () => {
-	document.querySelector(".container").innerHTML =null;
+	document.querySelector(".container").innerHTML = null;
 	createMainContent(temples);
 	heading.textContent = " Home";
 });
 
 oldLink.addEventListener("click", () => {
-	document.querySelector(".container").innerHTML =null;
+	document.querySelector(".container").innerHTML = null;
 	const newTemples = temples.filter((temple) => {
-			const year = new Date(temple.dedicated).getFullYear();
-			return  year < 2005;
+		const year = new Date(temple.dedicated).getFullYear();
+		return year < 1999;
 	});
 	createMainContent(newTemples);
 	heading.textContent = "Old"
-	});
+});
 
 newLink.addEventListener("click", () => {
-	document.querySelector(".container").innerHTML =null;
+	document.querySelector(".container").innerHTML = null;
 	const newTemples = temples.filter((temple) => {
 		const year = new Date(temple.dedicated).getFullYear();
-		return year >= 2000;
+		return year > 2000;
 	});
 	createMainContent(newTemples);
 	heading.textContent = "New"
 });
 
 largeLink.addEventListener("click", () => {
-	document.querySelector(".container").innerHTML =null;
-	const largeTemples = temples.filter((temple) => temple.area >= 10000);
+	document.querySelector(".container").innerHTML = null;
+	const largeTemples = temples.filter((temple) => temple.area >= 90000);
 	createMainContent(largeTemples);
 	heading.textContent = "Large"
 });
 
 smallLink.addEventListener("click", () => {
-	document.querySelector(".container").innerHTML =null;
+	document.querySelector(".container").innerHTML = null;
 	const smallTemples = temples.filter((temple) => temple.area < 10000);
 	createMainContent(smallTemples);
 	heading.textContent = "Small"
