@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loads</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Animals</h1>
+    </header>
+    <main>
+        <img src="images/1.png" alt="animal 1" width="400" height="600" loading="lazy">
+        <img src="images/2.jpg" alt="animal 2" width="400" height="600" loading="lazy">
+        <img src="images/3.webp" alt="animal 3" width="400" height="600" loading="lazy">
+        <img src="images/4.jpg" alt="animal 4" width="400" height="600" loading="lazy">
+        <img src="images/5.jpg" alt="animal 5" width="400" height="600" loading="lazy">
+        <img src="images/6.jpg" alt="animal 6" width="400" height="600" loading="lazy">
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span>Animals</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
