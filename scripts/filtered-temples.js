@@ -163,7 +163,7 @@ oldLink.addEventListener("click", () => {
 	document.querySelector(".container").innerHTML = null;
 	const newTemples = temples.filter((temple) => {
 		const year = new Date(temple.dedicated).getFullYear();
-		return year < 1999;
+		return year < 1900;
 	});
 	createMainContent(newTemples);
 	heading.textContent = "Old"
