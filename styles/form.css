@@ -96,10 +96,10 @@ select {
 textarea {
     resize: none;
     height: 70px;
-    width: 98.5%;
+    width: 100%;
 }
 .form1 input[type="text"] {
-    width: 98.5%;
+    width: 100%;
 }
 .optional {
     color: blue;
@@ -119,6 +119,7 @@ textarea {
 .form1 select:required:valid {
     border-left: solid 5px green;
 }
+
 
 footer{
     font-size: 20px;
