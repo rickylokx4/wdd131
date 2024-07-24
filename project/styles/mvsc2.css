@@ -1,10 +1,10 @@
 :root{
     --primary-color:#00415F;
     --secundary-color:#c9dded;
-    --primary-font-color:#ededed;
+    --primary-font-color:#ffeb6b;
     --secundary-font-color:#faca1e;
     --main-font: "Ubuntu", sans-serif;
-    --secondo-font: "PT Sans", sans-serif;
+    --second-font: "PT Sans", sans-serif;
 }
 *{
     margin: 0;
@@ -20,7 +20,7 @@ body{
     border: solid;
     border-color: var(--primary-color);
     background-color: var(--secundary-color);
-    font-family: var(--secondo-font);
+    font-family: var(--second-font);
     
     
 }
@@ -106,13 +106,21 @@ footer{
 }
 .banner{
     width: 100%;
+    border: solid;
+    border-color: var(--primary-color);
+}
+.banner-medium{
+    display: none;
+}
+.banner-large{
+    display: none;
 }
 .card{
     width: 350px;
     text-align: center;
     padding: 0.8rem;;
     margin: 0.8rem;
-    background-color: rgb(245, 245, 245);
+    background-color: rgba(245, 245, 245, 0.675);
     border: solid;
     border-color: var(--primary-color);
     border-radius: 6px;
@@ -123,6 +131,7 @@ footer{
 }
 
 .tournament-1, .tournament-2{
+    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -130,6 +139,9 @@ footer{
 }
 .container-2{
     text-align: center;
+}
+.container-2 h2{
+    margin-top: 1rem;
 }
 .card img{
     margin-top: 1rem;
@@ -170,12 +182,14 @@ footer{
     max-width: 400px;
     appearance: none;
 }
-
 .form1 input[type="submit"] {
     padding: .8rem;
     margin-top: 1rem;
     width: 400px;
     font-size: 20px;
+}
+.container-3{
+    margin-top: 1rem;
 }
 
 .container-4{
@@ -183,17 +197,34 @@ footer{
     min-height: 500px;
 }
 
-/* ////////////aca */
-
-
-
 @media only screen and (min-width: 570px) {
-
+    .banner{
+    display: none;
+    }
+    .banner-medium{
+        display: block;
+        width: 100%;
+        border: solid;
+        border-color: var(--primary-color);
+    }
+    .banner-large{
+        display: none;
+    }
 }
 
-
-/* 570px */
 @media only screen and (min-width: 800px) {
+    .banner{
+        display: none;
+    }
+    .banner-medium{
+        display: none;
+    }
+    .banner-large{
+        display: block;
+        width: 100%;
+        border: solid;
+        border-color: var(--primary-color);
+    }
 	header{
         height: 3.8rem;
         display: flex;
@@ -206,8 +237,6 @@ footer{
     }
     .navigation li {
 		display: block;
-
-		
 	}
     .navigation a {
 		text-align: right;
@@ -218,8 +247,4 @@ footer{
     #menu {
 		display: none;
 	}
-    
-    
-    
-
 }
