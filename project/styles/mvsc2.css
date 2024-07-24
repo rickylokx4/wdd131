@@ -196,35 +196,15 @@ footer{
     padding: 1rem;
     min-height: 500px;
 }
-
-@media only screen and (min-width: 570px) {
-    .banner{
-    display: none;
-    }
-    .banner-medium{
-        display: block;
-        width: 100%;
-        border: solid;
-        border-color: var(--primary-color);
-    }
-    .banner-large{
-        display: none;
-    }
+.hero{
+    width: 100%;
+}
+.hero img{
+    border: solid;
+    border-color: var(--primary-color);
 }
 
 @media only screen and (min-width: 800px) {
-    .banner{
-        display: none;
-    }
-    .banner-medium{
-        display: none;
-    }
-    .banner-large{
-        display: block;
-        width: 100%;
-        border: solid;
-        border-color: var(--primary-color);
-    }
 	header{
         height: 3.8rem;
         display: flex;

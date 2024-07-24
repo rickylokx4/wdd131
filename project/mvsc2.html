@@ -29,9 +29,13 @@
         </nav>
     </header>
     <main>
-        <img  class="banner"  src="images/bar2.webp" alt="mvsc2-banner" loading="lazy">
-        <img  class="banner-medium"  src="images/bar-medium.webp" alt="mvsc2-banner" loading="lazy">
-        <img  class="banner-large"  src="images/bar-large.webp" alt="mvsc2-banner" loading="lazy">
+        <div class="hero">
+            <picture>
+                <source srcset="images/bar2.webp" media="(max-width: 570px)">
+                <source srcset="images/bar-medium.webp" media="(max-width: 800px)" >
+                <img src="images/bar-large.webp" alt="mvsc2 bar" width="100%" loading="lazy">
+            </picture>
+        </div>
         <div class="container">
             <h2 id="main-title">About The Tournament</h2>
             <h2>rules</h2>

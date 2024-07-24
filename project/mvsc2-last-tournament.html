@@ -30,9 +30,12 @@
     </header>
     <main>
         <div class="container-2">
-            <img  class="banner"  src="images/bar2.webp" alt="mvsc2-banner">
-            <img  class="banner-medium"  src="images/bar-medium.webp" alt="mvsc2-banner">
-            <img  class="banner-large"  src="images/bar-large.webp" alt="mvsc2-banner">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/bar2.webp" media="(max-width: 570px)">
+                    <source srcset="images/bar-medium.webp" media="(max-width: 800px)" >
+                    <img src="images/bar-large.webp" alt="mvsc2 bar" width="100%" loading="lazy">
+                </picture>
             <h2 class="tournament-date">Tournament 2023</h2>
             <div class="tournament-1">
             </div>
